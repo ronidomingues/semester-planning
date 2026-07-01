@@ -1,0 +1,148 @@
+/* Box sizing mais intuitivo */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Permite alturas relativas */
+html,
+body {
+    height: 100%;
+}
+
+/* Melhor renderização de texto */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Mídias responsivas */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Inputs herdam fonte */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Evita overflow em textos longos */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Listas sem marcadores */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Links sem decoração padrão */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Botões sem estilos nativos */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Tabelas consistentes */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Elementos de formulário */
+input,
+textarea,
+select {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* Textareas redimensionáveis apenas verticalmente */
+textarea {
+    resize: vertical;
+}
+
+/* Remove estilos de citações */
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+}
+
+/* Elementos semânticos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Melhora foco para acessibilidade */
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* Remove animações para usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
