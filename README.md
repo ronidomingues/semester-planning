@@ -1,5 +1,9 @@
 # Semester Planning
 
+## Link do Projeto no GitHub Pages
+
+- [semester-planning](https://ronidomingues.github.io/semester-planning/)
+
 ## Fontes para Imagens, Ícones e Ilustrações
 
 - [Pexels](https://www.pexels.com/)
